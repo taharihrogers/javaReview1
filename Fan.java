@@ -44,7 +44,7 @@ public class Fan {
         return on;
     }
 
-    public void getOn(boolean inOn){
+    public void setOn(boolean inOn){
         on = inOn;
     }
     public double getRadius(){
