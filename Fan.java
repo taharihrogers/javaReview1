@@ -1,4 +1,5 @@
 
+
 /**
  * Taharih Rogers
  * Java Review 1
@@ -32,12 +33,54 @@ public class Fan {
     }
 
     //accessor and mutator methods for all 4 fields
+    public int getSpeed(){
+        return speed;
+    }
+
+    public void setSpeed(int inSpeed){
+        speed = inSpeed;
+    }
+    public boolean getOn(){
+        return on;
+    }
+
+    public void getOn(boolean inOn){
+        on = inOn;
+    }
+    public double getRadius(){
+        return radius;
+    }
+
+    public void setRadius(double inRadius){
+        radius = inRadius;
+    }
+    public String getColor(){
+        return color;
+    }
+
+    public void setColor(String inColor){
+        color = inColor;
+    }
 
     //toString
     public String toString(){
+        String toString;
         //if fan is on, returns the fan speed, color, and radius in one combined string
+        if(on==true)
+        {
+            toString = "Fan speed: " + speed + " Color: " + color + " Radius: " + radius;
+        }
         //if fan is off, returns the fan color and radius along with the string "fan is off" in one combined string.
-        return null;
+        else if(on==false)
+        {
+            toString = "Fan Color: " + color + " Radius: " + radius + " fan is off";
+        }
+        else
+        {
+            toString = "null";
+        }
+        return toString;
+
     }
 
 }
